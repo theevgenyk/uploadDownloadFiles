@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js" rel="script"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Upload Download Service</title>
+</head>
+<body>
+<div class="header">
+    <h2> Web - сервис загрузки и хранения файлов</h2>
+</div>
+<div class="container">
+    <button class="button" onclick="selectFile()">Выберите файлы для загрузки</button>
+    <button class="button" onclick="uploadFiles()" id="uploadBtn" disabled>Загрузить файлы</button>
+    <button class="button" onclick="getFiles()"> Отобразить список файлов</button>
+    <div class="listSelectedFiles">
+        <ul id="selectedFiles"></ul>
+    </div>
+    <div class="listAllFiles">
+        <div id="allFiles"></div>
+    </div>
+</div>
+</body>
+</html>
